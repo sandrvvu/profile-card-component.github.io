@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --white: hsl(60,11.11%,96.47%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    background-color: var(--dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: var(--very-dark-desaturated-blue);
+    background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    background-repeat: no-repeat, no-repeat;
+    background-color: hsl(185deg, 75%, 39%);
+}
+
+.card {
+  background-color: var(--white);
+  width: 400px;
+  height: 420px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-header img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+
+}
+
+.card-content {
+   height: 170px;
+}
+.avatar {
+  border: 7px var(--white) solid;
+  border-radius: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+.name  {
+  font-size: 23px;
+  font-weight: 700;
+  position: relative;
+  top: -40px;
+  margin-bottom: 12px;
+}
+
+.name span {
+  font-weight: 400;
+  color: var(--dark-gray);
+}
+
+.location {
+  position: relative;
+  top: -40px;
+  color: var(--dark-gray);
+}
+
+.card-stats{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid hsl(0deg, 0%, 80%);
+  text-align: center;
+  padding: 20px;
+}
+
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.num{
+  font-weight: 700;
+}
+
+.stats-name {
+  font-size: 13px;
+  color: var(--dark-grayish-blue);
+  letter-spacing: 2px;
+}
+
+
